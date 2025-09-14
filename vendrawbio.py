@@ -24,7 +24,7 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 
 @app.get("/", response_class=HTMLResponse)
 def serve_frontend(request: Request):
-    return templates.TemplateResponse("venndrawbio_frontend.html", {"request": request})
+    return templates.TemplateResponse("index.html", {"request": request})
 
 
 @app.post("/venn")
