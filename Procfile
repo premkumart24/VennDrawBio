@@ -1,1 +1,1 @@
-web: gunicorn -k uvicorn.workers.UvicornWorker venndrawbio:app
+web: gunicorn -k uvicorn.workers.UvicornWorker vendrawbio:app
